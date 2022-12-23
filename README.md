@@ -15,7 +15,16 @@ import { TransfiRampReactNativeSdkView } from "transfi-ramp-react-native-sdk";
 
 // ...
 
-<TransfiRampReactNativeSdkView color="tomato" />
+<TransfiRampReactNativeSdkView
+      style={styles.webview}
+      source={{ uri: 'https://buy.transfi.com/?apiKey=[YOUR_API_KEY]' }}
+      javaScriptEnabled={true}
+      messagingEnabled={true}
+      domStorageEnabled={true}
+      onMessage={(event) => {
+        console.log('event', event?.nativeEvent?.data);
+      }}
+    />
 ```
 
 ## Contributing
