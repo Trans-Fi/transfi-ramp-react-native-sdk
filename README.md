@@ -16,6 +16,7 @@ import { TransfiRampReactNativeSdkView } from "transfi-ramp-react-native-sdk";
 // ...
 
 <TransfiRampReactNativeSdkView
+      styles={styles.webview}
       source={{ uri: 'https://buy.transfi.com/?apiKey=[YOUR_API_KEY]' }}
       javaScriptEnabled={true}
       messagingEnabled={true}
