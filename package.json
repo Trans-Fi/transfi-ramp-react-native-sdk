@@ -1,6 +1,6 @@
 {
   "name": "transfi-ramp-react-native-sdk",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "transfi react native plugin",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
