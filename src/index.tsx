@@ -4,6 +4,7 @@ import {
   Platform,
   ViewStyle,
 } from 'react-native';
+import { WebView } from 'react-native-webview';
 
 const LINKING_ERROR =
   `The package 'transfi-ramp-react-native-sdk' doesn't seem to be linked. Make sure: \n\n` +
@@ -19,8 +20,10 @@ type TransfiRampReactNativeSdkProps = {
 const ComponentName = 'TransfiRampReactNativeSdkView';
 
 export const TransfiRampReactNativeSdkView =
-  UIManager.getViewManagerConfig(ComponentName) != null
-    ? requireNativeComponent<TransfiRampReactNativeSdkProps>(ComponentName)
-    : () => {
-        throw new Error(LINKING_ERROR);
-      };
+  Platform.OS === 'android'
+    ? UIManager.getViewManagerConfig(ComponentName) != null
+      ? requireNativeComponent<TransfiRampReactNativeSdkProps>(ComponentName)
+      : () => {
+          throw new Error(LINKING_ERROR);
+        }
+    : WebView;
