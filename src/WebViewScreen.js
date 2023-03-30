@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Image, StyleSheet } from 'react-native';
 import WebView from 'react-native-webview';
-export const logo = require('./assets/logo-ori.gif');
+export const logo = require('./assets/logo-ori-min.gif');
 
 const WebViewScreen = (props) => {
   const Loading = () => {
