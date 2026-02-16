@@ -2,8 +2,8 @@
   "name": "transfi-ramp-react-native-sdk",
   "version": "0.1.4",
   "description": "transfi react native plugin",
-  "main": "lib/commonjs/index",
-  "module": "lib/module/index",
+  "main": "src/index",
+  "module": "src/index",
   "types": "lib/typescript/index.d.ts",
   "react-native": "src/index",
   "source": "src/index",
@@ -158,6 +158,6 @@
     ]
   },
   "dependencies": {
-    "react-native-webview": "^11.26.1"
+    "react-native-webview": "^13.6.4"
   }
 }
