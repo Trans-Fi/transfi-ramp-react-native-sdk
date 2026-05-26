@@ -1,0 +1,1 @@
+declare module 'transfi-ramp-react-native-sdk';
