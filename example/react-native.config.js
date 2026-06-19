@@ -6,5 +6,8 @@ module.exports = {
     [pak.name]: {
       root: path.join(__dirname, '..'),
     },
+    'react-native-webview': {
+      root: path.join(__dirname, '../node_modules/react-native-webview'),
+    },
   },
 };
